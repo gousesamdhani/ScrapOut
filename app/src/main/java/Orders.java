@@ -4,7 +4,6 @@ import cashin.scrapout.Order;
 
 /**
  * Created by Sammy on 09/03/16.
- * Commiting the change
  */
 public class Orders {
 
