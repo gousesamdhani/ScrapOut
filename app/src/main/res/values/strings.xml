@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ScrapOut</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="active">Active</string>
+    <string name="all">All</string>
+    <string name="cancel"><u>Cancel order</u></string>
+    <string name="cancelled">Cancelled</string>
+    <string name="done">Completed</string>
+    <string name="action_settings">Settings</string>
+</resources>

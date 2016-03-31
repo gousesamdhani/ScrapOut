@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d3d3d3">
+
+    <RelativeLayout
+        android:id="@+id/iView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+    <TextView
+        android:text="Iron : "
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/iron_quantity"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:inputType="number"
+        android:hint="in Kgs"
+        android:layout_margin="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="Steel : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_margin="10dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/steelQuantity"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:hint="in Kgs"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="Paper : "
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_margin="10dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/paper_quantity"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:hint="in Kgs"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="Books : "
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_margin="10dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/books_quantity"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:hint="in Kgs"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cbView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="CardBoard : "
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_margin="10dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/cardBoard_quantity"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:hint="in Kgs"
+            android:layout_margin="10dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Name"
+        android:id="@+id/orderUName"
+        android:layout_margin="3dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:text="State:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#000000" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderState"
+        android:inputType="textPostalAddress"
+        android:layout_margin="3dp"
+        android:textColor="#000000"
+        android:spinnerMode="dialog" />
+    <TextView
+        android:text="District:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#000000" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderDistrict"
+        android:inputType="textPostalAddress"
+        android:layout_margin="3dp"
+        android:textColor="#000000"
+        android:spinnerMode="dialog" />
+    <TextView
+        android:text="Area:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:textColor="#000000" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderArea"
+        android:inputType="textPostalAddress"
+        android:layout_margin="3dp"
+        android:textColor="#000000"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Address"
+        android:lines="3"
+        android:id="@+id/address" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderPincode"
+        android:inputType="number"
+        android:hint="PinCode"
+        android:layout_margin="3dp"
+        android:textColor="#000000" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="MobileNumber"
+        android:id="@+id/oMNumber"
+        android:layout_margin="3dp"
+        android:textColor="#000000" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:weightSum="1.0">
+        android:orientation="horizontal>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/ocancel"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Cancel"
+            android:textAlignment="center" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/oSubmit"
+            android:layout_weight=".5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAlignment="center" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</LinearLayout>
+</ScrollView>
